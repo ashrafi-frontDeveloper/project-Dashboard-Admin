@@ -12,9 +12,11 @@ export default function App() {
 
   return (
     <>
-      <Sidebar />
-      <Topbar />
-      {router}
+        <Topbar />
+        <div className="container">
+            <Sidebar />
+            {router}
+        </div>
     </>
   )
 }
