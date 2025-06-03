@@ -9,8 +9,9 @@ import BarChartIcon from "@mui/icons-material/BarChart";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
-import ReportIcon from '@mui/icons-material/Report';
+import ReportIcon from "@mui/icons-material/WorkOutline";
 
 import { Link } from "react-router-dom";
 
@@ -20,7 +21,6 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
-
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
@@ -40,7 +40,6 @@ export default function Sidebar() {
             </li>
           </ul>
         </div>
-
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
@@ -67,12 +66,11 @@ export default function Sidebar() {
               Transactions
             </li>
             <li className="sidebarListItem">
-              <ReportIcon className="sidebarIcon" />
+              <BarChartIcon className="sidebarIcon" />
               Reports
             </li>
           </ul>
         </div>
-
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Notifications</h3>
           <ul className="sidebarList">
@@ -90,8 +88,7 @@ export default function Sidebar() {
             </li>
           </ul>
         </div>
-
-        {/* <div className="sidebarMenu">
+        <div className="sidebarMenu">
           <h3 className="sidebarTitle">Staff</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
@@ -107,8 +104,7 @@ export default function Sidebar() {
               Reports
             </li>
           </ul>
-        </div> */}
-
+        </div>
       </div>
     </div>
   );
