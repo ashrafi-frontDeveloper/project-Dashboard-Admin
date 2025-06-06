@@ -54,25 +54,25 @@ const newMembers = [
         id: 1,
         username: 'Mohammad Amin',
         title: 'Web Developer',
-        img:'images/profile.jfif'
+        img: 'images/amin.jpg'
     },
     {
         id: 2,
-        username: 'Sasas Moq',
+        username: 'Sasan Moq',
         title: 'Seo Eng',
-        img:'images/profile.jfif'
+        img: 'images/sasan.jpg'
     },
     {
         id: 3,
         username: 'Zahra Agayi',
         title: 'Weblog',
-        img:'images/profile.jfif'
+        img: 'images/zahra.jpg'
     },
     {
         id: 4,
         username: 'Qadir Yolme',
         title: 'Hacker',
-        img:'images/profile.jfif'
+        img: 'images/qadir.jpg'
     },
 ]
 
@@ -83,7 +83,7 @@ const transactions = [
         date: '12 Jun 2022',
         amount: 123,
         status: 'Approved',
-        img: 'images/profile.jfif'
+        img: 'images/qadir.jpg'
     },
     {
         id: 2,
@@ -91,7 +91,7 @@ const transactions = [
         date: '23 Jul 2022',
         amount: 123,
         status: 'Declined',
-        img: 'images/profile.jfif'
+        img: 'images/amin.jpg'
     },
     {
         id: 3,
@@ -99,7 +99,7 @@ const transactions = [
         date: '28 May 2022',
         amount: 123,
         status: 'Pending',
-        img: 'images/profile.jfif'
+        img: 'images/mmd.jpg'
     },
     {
         id: 4,
@@ -107,8 +107,93 @@ const transactions = [
         date: '1 Feb 2022',
         amount: 123,
         status: 'Approved',
-        img: 'images/profile.jfif'
+        img: 'images/sasan.jpg'
     },
 ]
 
-export { xAxisData, newMembers, transactions }
+let userRows = [
+    {
+        id: 1,
+        username: 'Qadir Yolme',
+        avatar: 'images/qadir.jpg',
+        status: 'active',
+        transaction: '$129.52',
+        email: 'amin@gmail.com'
+    },
+    {
+        id: 2,
+        username: 'Amin Saeedi',
+        avatar: 'images/amin.jpg',
+        status: 'non-active',
+        transaction: '$110',
+        email: 'amin@gmail.com'
+    },
+    {
+        id: 3,
+        username: 'Sasan Moq',
+        avatar: 'images/sasan.jpg',
+        status: 'active',
+        transaction: '$98',
+        email: 'amin@gmail.com'
+    },
+    {
+        id: 4,
+        username: 'Zahra Agayi',
+        avatar: 'images/zahra.jpg',
+        status: 'active',
+        transaction: '$0',
+        email: 'amin@gmail.com'
+    },
+    {
+        id: 5,
+        username: 'Hamze mohammadi',
+        avatar: 'images/hamze.jpg',
+        status: 'active',
+        transaction: '$55.98',
+        email: 'amin@gmail.com'
+    }
+]
+
+let products = [
+    {
+        id: 1,
+        title: 'Asus',
+        avatar: 'images/asus.jpeg',
+        price: 890
+    },
+    {
+        id: 2,
+        title: 'Acer',
+        avatar: 'images/acer.jpg',
+        price: 890
+    },
+    {
+        id: 3,
+        title: 'HP',
+        avatar: 'images/hp.jpg',
+        price: 890
+    },
+    {
+        id: 4,
+        title: 'Dell',
+        avatar: 'images/dell.jpg',
+        price: 890
+    },
+]
+
+const productsData = [
+    {
+        name: 'Jan',
+        sales: 4000,
+    },
+    {
+        name: 'Feb',
+        sales: 3000,
+    },
+    {
+        name: 'Mar',
+        sales: 5000,
+    },
+]
+
+export { xAxisData, newMembers, transactions, userRows, products, productsData }
